@@ -6,15 +6,22 @@
     <title>TetrisGame</title>
     <link rel="stylesheet" href="tetris.css">
 </head>
-<body class="centered-container">
-    <canvas id="myCanvas" width="800" height="750" style="border:1px solid #000000;"></canvas>
+<body class="body">
+
+    <div id="myCanvasContainer" style="position: relative;">
+        <div class="score-container">
+            <canvas id="scoreCanvas" width="140" height="30" style="border:1px solid black; position: absolute; right: 0; top: 0;"></canvas>
+        </div>
+            <canvas id="nextCanvas" width="140" height="90" style="border:1px solid black; position: absolute; left: 0; top: 0;"></canvas>
+            <canvas id="myCanvas" width="600" height="700" style="border:1px solid black;"></canvas>
     
     <div class="button">
-        <div class="control-button">우</div>
-        <div class="control-button">회전</div>
-        <div class="control-button">하강</div>
-        <div class="control-button">좌</div>
+        <div class="control-button" id="left">좌</div>
+        <div class="control-button" id="right">우</div>
+        <div class="control-button" id="rotate">회전</div>
+        <div class="control-button" id="down">하강</div>
     </div>
+</div>
     <script src="tetris.js"></script>
 </body>
 </html>
