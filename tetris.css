@@ -6,6 +6,7 @@
     margin: 0;                 
 }
 
+/* 방향버튼 div */
 .button {
     display: flex;
     border: 1px solid black;
@@ -14,6 +15,7 @@
     /* height: 100px; */
 }
 
+/* 키보드 방향버튼 */
 .control-button{
     margin: 10px;
     width: 50px;
@@ -24,6 +26,7 @@
     
 }
 
+/* 방향버튼 여기까지 */
 .control-button:hover {
     background-color: gray; 
 }
