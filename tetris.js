@@ -180,7 +180,6 @@ function drop() {
 
         checkAndClearLines();
         currentBlock = randomTb();
-        // currentBlock = nextBlock;
         drawNextBlock();  
     }
     drawBoard();
